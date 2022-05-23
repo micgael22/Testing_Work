@@ -13,10 +13,10 @@ public class Login {
     @FindBy(name = "uid")
     WebElement userName;
 
-    @FindBy(className = "password")
+    @FindBy(name = "password")
     WebElement password;
 
-    @FindBy(name = "barone")
+    @FindBy(className = "barone")
     WebElement titleText;
 
     @FindBy(name = "btnLogin")
@@ -24,22 +24,26 @@ public class Login {
 
     public Login(WebDriver driver) {
         this.driver = driver;
-                                                                        //This initElements method will create all WebElements
+        //This initElements method will create all WebElements
         PageFactory.initElements(driver, this);
     }
-                                                                        //Set userName in textbox
+
+    //Set userName in textbox
     public void setUserName(String strUsername) {
         userName.sendKeys(strUsername);
     }
-                                                                        //Set password in password textbox
+
+    //Set password in password textbox
     public void setPassword (String strPassword) {
         password.sendKeys(strPassword);
     }
-                                                                        //Click on Login button
+
+    //Click on Login button
     public void clickLogin() {
         login.click();
     }
-                                                                        //Get the title of Login Page
+
+    //Get the title of Login Page
     public String getLoginTitle() {
         return titleText.getText();
     }
