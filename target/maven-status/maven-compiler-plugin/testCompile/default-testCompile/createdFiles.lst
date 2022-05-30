@@ -1,1 +1,7 @@
+com\inetBanking\testCases\TC_LoginTest_001.class
 example\NewTest.class
+com\inetBanking\pageObjects\LoginPage.class
+com\inetBanking\testCases\BaseClass.class
+example\NewTest2.class
+testTwo\TestLogin.class
+testTwo\TestLoginPageFactory.class
