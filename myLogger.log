@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+
+<log>
+
+<record>
+  <date>2022-05-30T22:54:42.462577300Z</date>
+  <millis>1653951282462</millis>
+  <nanos>577300</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.inetBanking.testCases.TC_LoginTest_001</class>
+  <method>loginTest</method>
+  <thread>1</thread>
+  <message>URL is open</message>
+</record>
+<record>
+
+  <date>2022-05-30T22:54:43.703445600Z</date>
+  <millis>1653951283703</millis>
+  <nanos>445600</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.inetBanking.testCases.TC_LoginTest_001</class>
+  <method>loginTest</method>
+  <thread>1</thread>
+  <message>Entered UserName</message>
+</record>
+<record>
+
+  <date>2022-05-30T22:54:44.013032Z</date>
+  <millis>1653951284013</millis>
+  <nanos>32000</nanos>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.inetBanking.testCases.TC_LoginTest_001</class>
+  <method>loginTest</method>
+  <thread>1</thread>
+  <message>Entered password</message>
+</record>
+
+<record>
+  <date>2022-05-30T22:54:50.872125200Z</date>
+  <millis>1653951290872</millis>
+  <nanos>125200</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.inetBanking.testCases.TC_LoginTest_001</class>
+  <method>loginTest</method>
+  <thread>1</thread>
+  <message>Login test password</message>
+</record>
+</log>
