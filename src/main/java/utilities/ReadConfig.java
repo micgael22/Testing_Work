@@ -23,7 +23,6 @@ public class ReadConfig {
             System.out.println("Exception is " + e.getMessage());
         }
     }
-
     //Create method for every variable in properties file
 
     public String getApplicationURL() {

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+
     <test verbose="2" preserve-order="true" name="C:/User/Micgael/IdeaProjects/Project_Testing">
+
+        <parameter name="browser" value="chrome"></parameter>
+
         <classes>
+           <!--
             <class name="example.NewTest">
             </class>
             <class name="example.NewTest2">
@@ -10,6 +15,9 @@
             <class name="testTwo.TestLogin">
             </class>
             <class name="testTwo.TestLoginPageFactory">
+            </class>
+            -->
+            <class name="com.inetBanking.testCases.TC_LoginTest_001">
             </class>
         </classes>
     </test>

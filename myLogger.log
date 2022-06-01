@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
-
 <log>
-
 <record>
-  <date>2022-05-30T22:54:42.462577300Z</date>
-  <millis>1653951282462</millis>
-  <nanos>577300</nanos>
+  <date>2022-05-31T13:13:53.052619800Z</date>
+  <millis>1654002833052</millis>
+  <nanos>619800</nanos>
   <sequence>4</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -16,10 +14,9 @@
   <message>URL is open</message>
 </record>
 <record>
-
-  <date>2022-05-30T22:54:43.703445600Z</date>
-  <millis>1653951283703</millis>
-  <nanos>445600</nanos>
+  <date>2022-05-31T13:13:57.098853600Z</date>
+  <millis>1654002837098</millis>
+  <nanos>853600</nanos>
   <sequence>5</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -29,10 +26,9 @@
   <message>Entered UserName</message>
 </record>
 <record>
-
-  <date>2022-05-30T22:54:44.013032Z</date>
-  <millis>1653951284013</millis>
-  <nanos>32000</nanos>
+  <date>2022-05-31T13:13:57.463707600Z</date>
+  <millis>1654002837463</millis>
+  <nanos>707600</nanos>
   <sequence>6</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -41,11 +37,10 @@
   <thread>1</thread>
   <message>Entered password</message>
 </record>
-
 <record>
-  <date>2022-05-30T22:54:50.872125200Z</date>
-  <millis>1653951290872</millis>
-  <nanos>125200</nanos>
+  <date>2022-05-31T13:14:51.862249500Z</date>
+  <millis>1654002891862</millis>
+  <nanos>249500</nanos>
   <sequence>7</sequence>
   <logger>global</logger>
   <level>INFO</level>

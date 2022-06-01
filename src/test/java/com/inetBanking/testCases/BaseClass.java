@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import utilities.ReadConfig;
 
 import java.io.IOException;
@@ -24,11 +25,10 @@ public class BaseClass {
 
     public static Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
+    @Parameters("browser")
+
     @BeforeClass
-    public void setup() throws IOException {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    public void setup(String br) throws IOException {
 
         try {
             FileHandler fh = new FileHandler("myLogger.log");
@@ -38,6 +38,14 @@ public class BaseClass {
         catch (Exception e) {
             logger.log(Level.SEVERE, "File Logger not working");
         }
+
+        if(br.equals("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        }
+
+        driver.get(baseURL);
 
     }
     @AfterClass
