@@ -19,8 +19,8 @@ import java.util.Date;
 //--NB-- Listener class is used to generate Extent reports------//
 //-----------Everytime when run a test case it will generate a new report-----------//
 
-public class Reporting extends TestListenerAdapter {
-
+public class Reporting /*extends TestListenerAdapter*/ {
+/*
     public ExtentHtmlReporter htmlReporter;
     public ExtentReports extent;
     public ExtentTest logger;
@@ -31,14 +31,14 @@ public class Reporting extends TestListenerAdapter {
         String repName = "Test-Report-" + timeStamp + ".html";
 
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/" + repName);
-        htmlReporter.loadXMLConfig(System.getProperty("user.dir") + "extent-config.xml");
+        htmlReporter.loadXMLConfig(System.getProperty("user.dir") + "/extent-config.xml/");
 
         extent = new ExtentReports();
 
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Host name", "localhost");
         extent.setSystemInfo("Environment", "QA");
-        extent.setSystemInfo("user", "pavan");
+        extent.setSystemInfo("user", "Micgael");
 
         htmlReporter.config().setDocumentTitle("InetBanking Test Project");         //Title of the report
         htmlReporter.config().setReportName("Functional Test Automation Report");   //name of the report
@@ -75,5 +75,5 @@ public class Reporting extends TestListenerAdapter {
     public void onFinish(ITestContext testContext) {
         extent.flush();
     }
-
+*/
 }

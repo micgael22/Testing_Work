@@ -8,8 +8,8 @@ public class TC_LoginTest_001 extends BaseClass{
 
     @Test
     public void loginTest() {
-
-        //driver.get(baseURL);
+        
+        driver.get(baseURL);
 
         logger.info("URL is open");
 

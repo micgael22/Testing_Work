@@ -1,11 +1,11 @@
 package com.inetBanking.testCases;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import utilities.ReadConfig;
 
 import java.io.IOException;
@@ -16,7 +16,11 @@ import java.util.logging.Logger;
 
 public class BaseClass {
 
-    ReadConfig readConfig = new ReadConfig();
+    //ReadConfig readConfig = new ReadConfig();
+    //public String baseURL = readConfig.getApplicationURL();
+    //public String userName = readConfig.getUserName();
+    //public String password = readConfig.getPassword();
+    //public WebDriver driver;
 
     public String baseURL = "http://demo.guru99.com/V4/";
     public String userName = "mngr407634";
@@ -25,8 +29,24 @@ public class BaseClass {
 
     public static Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    @Parameters("browser")
+    @BeforeClass
+    public void setup() throws IOException {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+         try{
+            FileHandler fh = new FileHandler("myLogger.log");
+            fh.setLevel(Level.ALL);
+            logger.addHandler(fh);
+        }
+         catch (Exception e) {
+            logger.log(Level.SEVERE, "File Logger not working");
+        }
+    }
+
+    /*
+    @Parameters("browser")
     @BeforeClass
     public void setup(String br) throws IOException {
 
@@ -44,10 +64,22 @@ public class BaseClass {
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
-
         driver.get(baseURL);
-
     }
+     */
+
+   /* @BeforeClass
+    public void setup02() {
+        //System.setProperty("WebDriver driver", readConfig.getChromePath());
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        logger = Logger.getLogger("Project_Testing");
+        PropertyConfigurator.configure("Log4j.properties");
+    }
+    */
+
     @AfterClass
     public void afterTest() {
         driver.quit();

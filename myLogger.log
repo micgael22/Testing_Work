@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2022-05-31T13:13:53.052619800Z</date>
-  <millis>1654002833052</millis>
-  <nanos>619800</nanos>
+  <date>2022-06-07T15:41:45.723642700Z</date>
+  <millis>1654616505723</millis>
+  <nanos>642700</nanos>
   <sequence>4</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>URL is open</message>
 </record>
 <record>
-  <date>2022-05-31T13:13:57.098853600Z</date>
-  <millis>1654002837098</millis>
-  <nanos>853600</nanos>
+  <date>2022-06-07T15:41:46.743219500Z</date>
+  <millis>1654616506743</millis>
+  <nanos>219500</nanos>
   <sequence>5</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -26,9 +26,9 @@
   <message>Entered UserName</message>
 </record>
 <record>
-  <date>2022-05-31T13:13:57.463707600Z</date>
-  <millis>1654002837463</millis>
-  <nanos>707600</nanos>
+  <date>2022-06-07T15:41:47.002218700Z</date>
+  <millis>1654616507002</millis>
+  <nanos>218700</nanos>
   <sequence>6</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -38,9 +38,9 @@
   <message>Entered password</message>
 </record>
 <record>
-  <date>2022-05-31T13:14:51.862249500Z</date>
-  <millis>1654002891862</millis>
-  <nanos>249500</nanos>
+  <date>2022-06-07T15:41:57.648251500Z</date>
+  <millis>1654616517648</millis>
+  <nanos>251500</nanos>
   <sequence>7</sequence>
   <logger>global</logger>
   <level>INFO</level>
