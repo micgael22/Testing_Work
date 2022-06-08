@@ -4,7 +4,12 @@ import com.inetBanking.pageObjects.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class TC_LoginTest_001 extends BaseClass{
+
+    public TC_LoginTest_001() throws IOException {
+    }
 
     @Test
     public void loginTest() {

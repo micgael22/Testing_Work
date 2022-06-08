@@ -1,48 +1,39 @@
 package utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
 
 public class ReadConfig {
 
-    /*
-    Properties pro;
-    //WebDriver driver;
+    public Properties prop;
+    public String path;
+    public ReadConfig readCon;
 
-    public ReadConfig() {
-        File src = new File("config.properties");
+    public ReadConfig() throws IOException {
+        prop = new Properties();
+        path = "src/main/resources/config.properties";
+    }
+
+    public Properties readPropertiesFile(String fileName) throws IOException {
+        FileInputStream fis = null;
+        Properties prop = null;
 
         try {
-            FileInputStream fis = new FileInputStream(src);
-            pro = new Properties();
-            pro.load(fis);
+            fis = new FileInputStream(fileName);
+            prop = new Properties();
+            prop.load(fis);
         }
-        catch (Exception e){
-            System.out.println("Exception is " + e.getMessage());
+        catch(FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
         }
+        catch(IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            fis.close();
+        }
+        return prop;
     }
-    //Create method for every variable in properties file
-
-    public String getApplicationURL() {
-        String url = pro.getProperty("baseURL");
-        return url;
-    }
-
-    public String getUserName() {
-        String userName = pro.getProperty("userName");
-        return userName;
-    }
-
-    public String getPassword() {
-        String password = pro.getProperty("password");
-        return password;
-    }
-
-    public String getChromePath() {
-        String chromePath = pro.getProperty("chromePath");
-        return chromePath;
-    }
-
-     */
 }
